@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- fonts link -->
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>js/jq</title>
+    <!-- font awesome link -->
+
+
+</head>
+
+<body onload="myFunction()">
+
+    <div class="container">
+        <h1 class="text-info">Click the button to change the text</h1>
+        <button type="button" class="btn btn-info" onclick="textChange()">click me</button>
+        <h2 id="h2">dummy</h2>
+    </div>
+
+    <div class="container">
+        <h2>please double click</h2>
+        <button type="button" class="btn btn-outline-success" ondblclick="textDanger()">Click me</button>
+        <p id="p">dummy text</p>
+    </div>
+
+    <div class="container">
+        <h2>please mouse over and out</h2>
+        <p id="p1" class="text-info" onmouseover="textChangeTwo()" onmouseout="textChangeThree()">please mouse over</p>
+    </div>
+
+    <div class="container">
+        <h2>when the user is pressing the key alert text will show</h2>
+        <input type="text" id="key" class="text-danger" onkeydown="hi()">
+    </div>
+
+    <div class="container">
+        <h2>user can select cellPhone from the list </h2>
+        <select id="mySelect" onchange="choose()">
+            <option value="Iphone">Iphone</option>
+            <option value="Nokia">Nokia</option>
+            <option value="Samsung">Samsung</option>
+            <option value="OnePlus">OnePlus</option>
+            <option value="BlackBerry">BlackBerry</option>
+        </select>
+        <p id="demo"></p>
+    </div>
+
+
+
+    <!-- JS links -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
